@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -8,16 +7,18 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-800 p-4">
+    <nav className="bg-gray-800 p-4 fixed w-full z-10">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <div className="flex items-center">
-          <span className="text-white text-xl font-bold">Logo</span>
+          <a href='#Home' className="text-white text-xl font-bold px-3">
+            Logo
+          </a>
         </div>
         <div className="hidden md:flex space-x-4">
-          <a href="#" className="text-white hover:text-gray-300">Inicio</a>
-          <a href="#" className="text-white hover:text-gray-300">Acerca de</a>
-          <a href="#" className="text-white hover:text-gray-300">Servicios</a>
-          <a href="#" className="text-white hover:text-gray-300">Contacto</a>
+          <a href="#Home" className="text-white hover:text-gray-300">Inicio</a>
+          <a href="#About" className="text-white hover:text-gray-300">Acerca de</a>
+          <a href="#Services" className="text-white hover:text-gray-300">Servicios</a>
+          <a href="#Contact" className="text-white hover:text-gray-300">Contacto</a>
         </div>
         <div className="md:hidden flex items-center">
           <button
@@ -26,7 +27,7 @@ const Navbar = () => {
             <svg
               className="w-6 h-6"
               fill="none"
-              stroke="currentColor"
+              stroke="#fff"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -50,7 +51,7 @@ const Navbar = () => {
         </div>
       </div>
       {isOpen && (
-        <div className="md:hidden bg-gray-700 py-2">
+        <div className="md:hidden bg-gray-700 py-3">
           <a href="#" className="block text-white py-2 px-4 hover:bg-gray-600">Inicio</a>
           <a href="#" className="block text-white py-2 px-4 hover:bg-gray-600">Acerca de</a>
           <a href="#" className="block text-white py-2 px-4 hover:bg-gray-600">Servicios</a>
