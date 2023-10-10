@@ -52,10 +52,10 @@ const Navbar = () => {
       </div>
       {isOpen && (
         <div className="md:hidden bg-gray-700 py-3">
-          <a href="#" className="block text-white py-2 px-4 hover:bg-gray-600">Inicio</a>
-          <a href="#" className="block text-white py-2 px-4 hover:bg-gray-600">Acerca de</a>
-          <a href="#" className="block text-white py-2 px-4 hover:bg-gray-600">Servicios</a>
-          <a href="#" className="block text-white py-2 px-4 hover:bg-gray-600">Contacto</a>
+          <a href="#Home" className="block text-white py-2 px-4 hover:bg-gray-600">Inicio</a>
+          <a href="#About" className="block text-white py-2 px-4 hover:bg-gray-600">Acerca de</a>
+          <a href="#Services" className="block text-white py-2 px-4 hover:bg-gray-600">Servicios</a>
+          <a href="#Contact" className="block text-white py-2 px-4 hover:bg-gray-600">Contacto</a>
         </div>
       )}
     </nav>
