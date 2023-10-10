@@ -32,7 +32,7 @@ function App() {
         {/* <section id='Contact'>
           <Contact />
         </section> */}
-        <footer>
+        <footer id='Contact'>
           <Footer />
         </footer>
         <button
